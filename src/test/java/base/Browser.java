@@ -10,8 +10,9 @@ public class Browser {
 	@Test
 	public void start(){
 		WebDriver driver= new FirefoxDriver();
-		driver.get("http://www.facebook.com");
+		driver.get("http://www.google.com");
 		driver.findElement(By.id("email")).sendKeys("k@y.com");
+		driver.close();
 	}
 
 }
